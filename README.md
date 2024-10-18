@@ -1,8 +1,8 @@
-# Email Client App Assignment - Fullstack Test 2024
+# Email Client App
 
 ## Overview
 
-This project is an email client application inspired by Outlook, created as part of the ROC 8 Fullstack Test on October 12, 2024. The app provides a user-friendly interface for managing emails, allowing users to view, mark, and filter their emails efficiently.
+This project is an email client application inspired by Outlook. The app provides a user-friendly interface for managing emails, allowing users to view, mark, and filter their emails efficiently.
 
 ## APIs Provided
 
@@ -25,7 +25,7 @@ This project is an email client application inspired by Outlook, created as part
 - **Read/Unread Distinction**: Emails are displayed in different CSS styles based on their read/unread status.
 - **Filtering**: Users can filter emails by favorites, read, and unread status.
 
-## Must-Have Features
+## Features
 
 1. Render the email list using the provided API.
 2. Each email should display:
@@ -43,26 +43,6 @@ This project is an email client application inspired by Outlook, created as part
 7. Filter emails marked as favorite, read, and unread.
 8. Ensure the UI closely resembles the provided mocks.
 
-## Good to Have Features
-
+## Also it has
 - **Pagination**: Support for a lengthy email list with pagination (Page 1 and Page 2).
 - **Persistent Storage**: Save the state of favorited and read emails across sessions using local storage or similar technologies.
-
-## Implementation Guidelines
-
-- Focus on modularity and the design of the code solution.
-- Prioritize the performance of the application.
-- Avoid using external plugins; utilize tools such as Webpack, Gulp, etc., for development tasks.
-- Ensure the final solution is error-free.
-- Maintain a minimalist visual design/layout, showcasing CSS knowledge.
-- Use semantic HTML tags to enhance accessibility and readability.
-
-## Evaluation Criteria
-
-- Correctness and completeness of the solution.
-- Quality and design of the code.
-- Visual aesthetics: The UI should closely align with the provided design.
-- Technology choices: Favor ES6/7 standards over ES5, avoiding a mix of versions.
-- Overall understanding of the problem statement.
-
----
