@@ -1,70 +1,68 @@
-# Getting Started with Create React App
+# Email Client App Assignment - Fullstack Test 2024
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
 
-## Available Scripts
+This project is an email client application inspired by Outlook, created as part of the ROC 8 Fullstack Test on October 12, 2024. The app provides a user-friendly interface for managing emails, allowing users to view, mark, and filter their emails efficiently.
 
-In the project directory, you can run:
+## APIs Provided
 
-### `npm start`
+- **Get All Emails**: [Email List API](https://flipkart-email-mock.now.sh/)
+- **Paginated Emails**: [Paginated Email API](https://flipkart-email-mock.now.sh/?page=<pageNumber>) (e.g., [Page 1](https://flipkart-email-mock.now.sh/?page=1), [Page 2](https://flipkart-email-mock.now.sh/?page=2))
+- **Get Email Body**: [Email Body API](https://flipkart-email-mock.now.sh/?id=<email-item-id>) (e.g., [Email ID 3](https://flipkart-email-mock.now.sh/?id=3))
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Sample UI
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **Email List View**: [View Here](http://bit.ly/2VtQGcb)
+- **Email Body View**: [View Here](http://bit.ly/2I5DemI)
+- **Color Codes**: [View Here](http://bit.ly/2wa2pCa)
 
-### `npm test`
+## Product Features
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **Email List Page**: Displays the list of emails sent to the user.
+- **Master-Slave Split Screen**: Clicking on an email item splits the view into a master (email list) on the left and a slave (email body) on the right.
+- **Dynamic Loading of Email Body**: The body of the email is loaded only when an email item is clicked.
+- **Mark as Favorite**: Users can mark an email as a favorite by clicking the "Mark as Favorite" button in the email body section.
+- **Read/Unread Distinction**: Emails are displayed in different CSS styles based on their read/unread status.
+- **Filtering**: Users can filter emails by favorites, read, and unread status.
 
-### `npm run build`
+## Must-Have Features
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. Render the email list using the provided API.
+2. Each email should display:
+   - From
+   - Subject
+   - Short description
+   - Date and time
+3. Display an avatar (circular logo) in each email item, populated with the first character of the sender's first name.
+4. Upon clicking an email, render its body using the API, which includes:
+   - Email subject
+   - Email body
+   - Email date and time
+5. Format the date as `dd/MM/yyyy hh:mm a`.
+6. Allow users to mark emails as favorites in the body section.
+7. Filter emails marked as favorite, read, and unread.
+8. Ensure the UI closely resembles the provided mocks.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Good to Have Features
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- **Pagination**: Support for a lengthy email list with pagination (Page 1 and Page 2).
+- **Persistent Storage**: Save the state of favorited and read emails across sessions using local storage or similar technologies.
 
-### `npm run eject`
+## Implementation Guidelines
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- Focus on modularity and the design of the code solution.
+- Prioritize the performance of the application.
+- Avoid using external plugins; utilize tools such as Webpack, Gulp, etc., for development tasks.
+- Ensure the final solution is error-free.
+- Maintain a minimalist visual design/layout, showcasing CSS knowledge.
+- Use semantic HTML tags to enhance accessibility and readability.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Evaluation Criteria
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- Correctness and completeness of the solution.
+- Quality and design of the code.
+- Visual aesthetics: The UI should closely align with the provided design.
+- Technology choices: Favor ES6/7 standards over ES5, avoiding a mix of versions.
+- Overall understanding of the problem statement.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+---
